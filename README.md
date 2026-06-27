@@ -40,14 +40,14 @@ used to validate the pipeline against real, clinically relevant data.
 
 ## Sample Output
 
-| Accession     |    Organism   |   Length  | GC % |
+| Accession | Organism | Length | GC % |
 |---|---|---|---|
-     NG_017013.2  Homo sapiens   32772  48.96
-     PZ086170.1   Homo sapiens     123   65.04
-     PX584652.1   Homo sapiens    1182   56.94
-     PX584651.1   Homo sapiens    1182   56.85
-     PX584650.1   Homo sapiens    1182   56.77
-     NR_176326.1  Homo sapiens    2399   53.48
+| NG_017013.2 | Homo sapiens | 32772 | 48.96 |
+| PZ086170.1 | Homo sapiens | 123 | 65.04 |
+| PX584652.1 | Homo sapiens | 1182 | 56.94 |
+| PX584651.1 | Homo sapiens | 1182 | 56.85 |
+| PX584650.1 | Homo sapiens | 1182 | 56.77 |
+| NR_176326.1 | Homo sapiens | 2399 | 53.48 |
 
 ## Author
 
