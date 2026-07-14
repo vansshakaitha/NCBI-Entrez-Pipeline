@@ -1,0 +1,6 @@
+# Ignore specific CSV output files
+brca1_entrez_results.csv
+tp53_entrez_results.csv
+
+# Alternatively, ignore ALL CSV files in this repository:
+*.csv
