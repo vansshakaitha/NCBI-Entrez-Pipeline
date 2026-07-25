@@ -8,7 +8,7 @@ ORG="Homo sapiens"
 RMAX=10
 
 ##SEARCH
-Entrez.email="vanssha@gmail.com"
+Entrez.email="your_email.example.com"
 
 handle=Entrez.esearch(db="nucleotide",term=f"{GENE}[Gene] AND {ORG}[Organism]",retmax=RMAX)
 record=Entrez.read(handle)
