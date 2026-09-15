@@ -11,23 +11,23 @@ RMAX=10
 Entrez.email="your_email.example.com"
 
 handle=Entrez.esearch(db="nucleotide",term=f"{GENE}[Gene] AND {ORG}[Organism]",retmax=RMAX)
-record=Entrez.read(handle)
+read_handle=Entrez.read(handle)
 handle.close()
 
 ##FETCH
-id_list=record["IdList"]
+id_list=read_handle["IdList"]
 fetch_handle=Entrez.efetch( 
     db="nucleotide",
     id=id_list,
     rettype="gb",
     retmode="text"
 )
-recs=list(SeqIO.parse(fetch_handle,"genbank"))
+records=list(SeqIO.parse(fetch_handle,"genbank"))
 fetch_handle.close()
 
 ##DataFrame
 data=[]
-for r in recs:
+for r in records:
     accession=r.id
     organism=r.annotations.get("organism","unknown")
     length=len(r.seq)
